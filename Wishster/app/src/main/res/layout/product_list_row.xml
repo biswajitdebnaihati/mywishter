@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:elevation="1dp"
+        android:background="@drawable/product_row_bg">
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:id="@+id/iv_product"
+            android:layout_marginLeft="4dp"
+            android:layout_centerVertical="true"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:paddingBottom="4dp"
+            android:layout_toRightOf="@+id/iv_product">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/tv_pname"
+                android:textSize="10sp"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/tv_pname"
+                android:id="@+id/tv_price"
+                android:gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom">
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_buy"
+                    android:text="Buy Now"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/roundedcorner_bg"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:id="@+id/btn_wish"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_weight=".9"
+                    android:textSize="12sp"
+                    android:layout_gravity="center"
+                    android:text="Add to Wishlist"
+                    android:textAllCaps="false"
+                    android:textColor="#FFF"
+                    android:background="@drawable/roundedcorner_bg"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

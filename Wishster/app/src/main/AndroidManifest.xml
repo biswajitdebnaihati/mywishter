@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.exnovation.wishster">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.WishProductDetails"></activity>
+        <activity android:name=".Activity.WishListActivity" />
+        <activity android:name=".Activity.Friends_user_profile" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges=
+                "keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Activity.ResetPassword"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.ProductListActivity"
+            android:usesCleartextTraffic="true" >
+
+        </activity>
+        <activity
+            android:name=".Activity.InfoActivity"
+            android:usesCleartextTraffic="true"></activity>
+        <activity
+            android:name=".Activity.ChangePassword"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.ActivityWebView"
+            android:usesCleartextTraffic="true" >
+
+        </activity>
+        <activity
+            android:name=".Activity.ForgotPassword"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.BlockedUsers"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.FriendCircleActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.ScanActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.SubmitOTPActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.ReviewActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.OtpActivity"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.Profile"
+            android:usesCleartextTraffic="true" />
+        <activity
+            android:name=".Activity.Login"
+            android:usesCleartextTraffic="true" />
+        <activity android:name=".Activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

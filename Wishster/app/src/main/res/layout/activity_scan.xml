@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:background="@drawable/friends_circle_bg">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:tint="#FFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="Scanner"
+            android:gravity="center"
+            android:textColor="#FFF"/>
+
+    </RelativeLayout>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_marginTop="50dp"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    android:layout_marginBottom="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtBarcodeValue"/>
+    <RelativeLayout
+        android:layout_gravity="center"
+        android:padding="3dp"
+        android:layout_margin="30dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:background="@drawable/scannerback"
+        >
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Align QR Code / Barcode within \nframe to SCAN"
+        android:gravity="center"
+        android:textColor="@color/blue"
+        android:textSize="12sp"/>
+    <Button
+        android:layout_marginTop="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:id="@+id/btnAction"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginBottom="20dp"
+        android:text="Scan"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundedcorner_bg"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>

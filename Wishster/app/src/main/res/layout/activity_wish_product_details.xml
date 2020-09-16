@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.WishProductDetails">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="8dp"
+        android:background="@drawable/friends_circle_bg">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/back_iv"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_back"
+            android:tint="#FFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:text="Product Details"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#FFF"/>
+        <ImageView
+            android:id="@+id/btn_scan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_qr_code"
+            android:tint="#FFF" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:paddingTop="12dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_des"/>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/iv_product"
+            android:layout_below="@+id/tv_des"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/iv_product"
+            android:id="@+id/tv_price"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_buy"
+                android:text="Buy Now"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/roundedcorner_bg"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/btn_remove"
+                android:text="Remove from wishlist"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/roundedcorner_bg"/>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
